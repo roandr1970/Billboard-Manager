@@ -22,8 +22,8 @@ class FilmManagerTest {
         manager.add(fourth);
         manager.add(fifth);
         Film[] actual = manager.getAll();
-        Film[] expected = new Film[] {fifth, fourth, third};
-        assertArrayEquals(expected,actual);
+        Film[] expected = new Film[]{fifth, fourth, third};
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -35,7 +35,7 @@ class FilmManagerTest {
         manager.add(fourth);
         manager.add(fifth);
         Film[] actual = manager.getAll();
-        Film[] expected = new Film[] {fifth, fourth, third, second, first};
-        assertArrayEquals(expected,actual);
+        Film[] expected = new Film[]{fifth, fourth, third, second, first};
+        assertArrayEquals(expected, actual);
     }
 }
